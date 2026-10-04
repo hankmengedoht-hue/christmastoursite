@@ -173,9 +173,9 @@ a { color: inherit; text-underline-offset: 0.2em; text-decoration-thickness: 1px
   transition: background-color var(--fast), transform var(--fast) var(--ease);
 }
 .btn--flame { background: var(--flame-400); color: var(--green-950); }
-.btn--flame:hover { background: #f6c979; transform: translateY(-2px); }
+.btn--flame:hover { background: var(--flame-500); transform: translateY(-2px); }
 .btn--flame:active { transform: none; }
-.btn--lg { min-height: 3.75rem; padding-inline: 2.5rem; font-size: 0.9375rem; }
+.btn--lg { min-height: 3.75rem; padding-inline: 2.5rem; font-size: var(--text-base); }
 .btn svg { width: 1.1rem; height: 1.1rem; fill: currentColor; }
 
 /* Text link with a drawn arrow */
@@ -502,7 +502,7 @@ a { color: inherit; text-underline-offset: 0.2em; text-decoration-thickness: 1px
 .hero__facts dd {
   margin-top: 0.25rem;
   font-family: var(--font-serif);
-  font-size: clamp(1.0625rem, 0.9rem + 0.5vw, 1.3125rem);
+  font-size: clamp(1.0625rem, 0.9rem + 0.5vw, 1.25rem);
   line-height: 1.3;
   font-variant-numeric: lining-nums;
 }
@@ -574,7 +574,7 @@ a { color: inherit; text-underline-offset: 0.2em; text-decoration-thickness: 1px
 }
 .expect__item:nth-child(even) { margin-top: var(--space-5); }
 .expect__item h3 { margin-top: var(--space-3); }
-.expect__item p { margin-top: 0.6rem; color: #24423f; max-width: 26ch; }
+.expect__item p { margin-top: 0.6rem; color: var(--green-800); max-width: 26ch; }
 
 @media (max-width: 64rem) {
   .expect__list { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: var(--space-5); }
@@ -613,7 +613,7 @@ a { color: inherit; text-underline-offset: 0.2em; text-decoration-thickness: 1px
   min-height: clamp(24rem, 62vw, 44rem);
   padding: var(--section) var(--gutter);
   background:
-    radial-gradient(60% 75% at 50% 108%, rgb(233 169 78 / 0.3), rgb(233 169 78 / 0) 70%),
+    radial-gradient(60% 75% at 50% 108%, color-mix(in srgb, var(--flame-500) 30%, transparent), transparent 70%),
     var(--green-950);
   color: var(--on-green);
   text-align: center;
@@ -751,7 +751,7 @@ a { color: inherit; text-underline-offset: 0.2em; text-decoration-thickness: 1px
 @media (max-width: 34rem) {
   .ticket { grid-template-columns: 6.25rem minmax(0, 1fr); }
   .ticket__stub { padding: var(--space-3) 0.5rem; }
-  .ticket__day, .ticket__month { letter-spacing: 0.1em; font-size: 0.6875rem; }
+  .ticket__day, .ticket__month { letter-spacing: 0.1em; }
   .ticket__num { font-size: 3.25rem; }
   .ticket__body { padding: var(--space-3) 1.25rem; }
   .facts__row { grid-template-columns: minmax(0, 1fr); gap: 0.35rem; padding-block: 1rem; }
@@ -788,7 +788,7 @@ a { color: inherit; text-underline-offset: 0.2em; text-decoration-thickness: 1px
   white-space: nowrap;
   transition: color var(--fast);
 }
-.contact__phone:hover { color: #f6c979; }
+.contact__phone:hover { color: var(--flame-500); }
 .contact .btn { margin-top: var(--space-4); }
 
 /* 11. Footer + call bar
