@@ -9,6 +9,7 @@ index.html        The whole page
 css/styles.css    All styles; design tokens (colours, type, spacing) are at the top
 js/script.js      Nav state, mobile menu, scroll reveals, mobile call bar
 images/           Favicon and social-share image now; photographs go here
+images/homes/     One photograph per home on the tour (home-1.jpg, home-2.jpg, ...)
 ```
 
 ## Run locally
@@ -19,15 +20,11 @@ Open `index.html` in a browser, or serve the folder:
 python -m http.server 8000
 ```
 
-## Deploy (Cloudflare Pages)
+## Deploy
 
-Connect the GitHub repository in Cloudflare Pages with:
-
-- Framework preset: **None**
-- Build command: *(leave empty)*
-- Build output directory: `/`
-
-Every push to `main` then publishes automatically.
+The site is served by GitHub Pages from the `main` branch at
+https://hankmengedoht-hue.github.io/christmastoursite/. Every push to `main` publishes automatically.
+If the address changes, update the `canonical`, `og:url` and `og:image` tags in the `<head>`.
 
 ## Where the tour facts come from
 
@@ -38,19 +35,27 @@ Nothing else has been invented. If the listing changes, update `index.html` to m
 
 ## Things still to fill in
 
-Search `index.html` for `PLACEHOLDER` to find every one.
-
-| Placeholder | Where | What to do |
-| --- | --- | --- |
-| `[PRICING]` | Details section | Replace "To be announced" with the ticket price, then remove `facts__row--tba` from that row |
-| `[MEETING LOCATION]` | Details section | Same, with the starting point |
-| `[TOUR DETAILS]` | Details section | Same, with what a ticket includes |
-| `[TOUR DESCRIPTION]` | About section | Add more copy if Laura supplies it |
-| `[OG IMAGE]` | `<head>` | `images/og-image.png` exists; change the tag to its full URL once the domain is known |
+Everything the client still has to supply is shown on the page as a visible
+`[PLACEHOLDER: ...]` mark. Each one is a `<span class="ph">` in `index.html`, so searching
+for `class="ph"` (or `PLACEHOLDER`) finds them all. To fill one in, replace the whole span
+with the real text. In the Details table, also remove `facts__row--tba` from that row.
 
 ## Adding photographs
 
-The page ships with empty photograph slots. Each one has a commented-out `<img>` tag right where the photo belongs. To fill a slot: put the file in `images/`, uncomment the tag, and write a real `alt` description. The "Photograph to come" label hides itself once an image is present.
+**Homes and the church: just drop the file in.** These slots already point at a file name.
+The photo appears as soon as the file exists; until then the slot shows a styled placeholder.
+
+| Slot | File | Suggested size |
+| --- | --- | --- |
+| Homes on the tour | `images/homes/home-1.jpg` … `home-6.jpg` | 1200×1500 (portrait) |
+| Church exterior | `images/church-exterior.jpg` | 1200×1500 (portrait) |
+| Church repairs | `images/church-repairs.jpg` | 1600×1200 (landscape) |
+
+After adding a home photo, update its `alt` text in `index.html`. For more or fewer than six
+homes, copy or delete an `<li class="home">` block.
+
+**Other slots: uncomment the tag.** Each has a commented-out `<img>` where the photo belongs.
+Put the file in `images/`, uncomment the tag, and write a real `alt` description.
 
 | Slot | File | Suggested size |
 | --- | --- | --- |
@@ -63,4 +68,4 @@ Keep files under about 300 KB each (JPEG or WebP) so the page stays fast.
 
 ## Contact shown on the site
 
-Laura Wichman Hip, 843-708-2228 (`tel:843-708-2228`). To change the number, search and replace `843-708-2228` in `index.html`.
+Laura Wichmann Hipp, 843-708-2228 (`tel:843-708-2228`). To change the number, search and replace `843-708-2228` in `index.html`.

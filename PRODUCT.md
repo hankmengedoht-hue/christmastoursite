@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-Static HTML/CSS/JavaScript, no framework or build step. Hosted on Cloudflare Pages from the GitHub repo `hankmengedoht-hue/christmastoursite`.
+Static HTML/CSS/JavaScript, no framework or build step. Hosted on GitHub Pages from the repo `hankmengedoht-hue/christmastoursite` (https://hankmengedoht-hue.github.io/christmastoursite/).
 
 ## Users
 
@@ -16,7 +16,7 @@ Charleston visitors and locals deciding how to spend an evening the week before 
 
 ## Product Purpose
 
-A one-page site introducing the Christmas in Charleston Candlelight Tour of Private Homes and getting visitors to call Laura Wichman Hip for tickets. Success is a phone call to 843-708-2228.
+A one-page site introducing the Christmas in Charleston Candlelight Tour of Private Homes and getting visitors to call Laura Wichmann Hipp for tickets. Success is a phone call to 843-708-2228.
 
 ## Positioning
 
@@ -38,12 +38,13 @@ Confirmed facts (from that listing and the owner's brief):
 - Homeowners give the tours of their homes
 - Benefits "the Restoration of an Architectural Gem for our Nation's 250th"; proceeds benefit the restoration of New Tabernacle Fourth Baptist Church
 - Tickets: call 843-708-2228
-- Contact: Laura Wichman Hip, 843-708-2228
+- Contact: Laura Wichmann Hipp, 843-708-2228
 
 ## Capabilities and Constraints
 
-- Tickets are sold by phone only; there is no online booking, form, or email.
-- Undecided / not supplied: ticket price, which homes or how many, meeting or starting point, parking, accessibility, what a ticket includes, age guidance. These stay as visible-in-source placeholders and must not be invented.
+- Tickets are sold by phone only; there is no online booking or form. An email address is wanted but not yet supplied.
+- Undecided / not supplied: ticket price, which homes or how many, meeting or starting point, parking, accessibility, what a ticket includes, age guidance. These are shown on the page as visible `[PLACEHOLDER: ...]` marks (class `ph`) and must not be invented.
+- Trust is the main obstacle (client call, a week after launch): visitors doubt that money given to a church restoration will be used properly. The page answers this with the church's story, a "Where the money goes" section, an FAQ and the homes on the tour.
 - Visual reference named by the owner: christmasincharleston.com (quality and tone only; no copied text, branding, layout, or assets).
 
 ## Evidence on Hand

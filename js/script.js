@@ -1,6 +1,6 @@
 /* Christmas in Charleston Candlelight Tour of Private Homes
    Small, dependency-free behaviours: nav state, mobile menu,
-   scroll reveals, active nav link, and the mobile call bar. */
+   scroll reveals, FAQ accordion, active nav link, and the mobile call bar. */
 (function () {
   'use strict';
 
@@ -44,7 +44,7 @@
       toggle.focus();
     }
   });
-  window.matchMedia('(min-width: 60.0625rem)').addEventListener('change', function (mq) {
+  window.matchMedia('(min-width: 72.0625rem)').addEventListener('change', function (mq) {
     if (mq.matches) setMenu(false);
   });
 
@@ -65,6 +65,21 @@
     reveals.forEach(function (el) { revealer.observe(el); });
   }
 
+  /* --- FAQ accordion ---------------------------------------------------
+     Answers are open in the HTML so they read without JavaScript.
+     Here they are collapsed and each question button toggles its answer. */
+  document.querySelectorAll('[data-faq]').forEach(function (button) {
+    var panel = document.getElementById(button.getAttribute('aria-controls'));
+    if (!panel) return;
+    button.setAttribute('aria-expanded', 'false');
+    panel.hidden = true;
+    button.addEventListener('click', function () {
+      var open = button.getAttribute('aria-expanded') === 'true';
+      button.setAttribute('aria-expanded', String(!open));
+      panel.hidden = open;
+    });
+  });
+
   /* --- Active nav link ------------------------------------------------- */
   var links = document.querySelectorAll('.nav__links a');
   if ('IntersectionObserver' in window) {
@@ -78,7 +93,7 @@
         });
       });
     }, { rootMargin: '-45% 0px -50% 0px' });
-    document.querySelectorAll('#top, #about, #experience, #details, #contact').forEach(function (s) {
+    document.querySelectorAll('#top, #about, #homes, #church, #money, #details, #faq, #contact').forEach(function (s) {
       spy.observe(s);
     });
   }

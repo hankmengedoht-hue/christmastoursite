@@ -5,20 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Christmas in Charleston Candlelight Tour of Private Homes | December 18 &amp; 19, 2026</title>
-  <meta name="description" content="Tour private homes in downtown Charleston, SC by candlelight, shown by the homeowners themselves. December 18 &amp; 19, 2026, 4:00–8:30 PM. Call Laura Wichman Hip at 843-708-2228 for tickets.">
+  <meta name="description" content="Tour private homes in downtown Charleston, SC by candlelight, December 18 &amp; 19, 2026. Proceeds benefit the restoration of New Tabernacle Fourth Baptist Church. Call Laura Wichmann Hipp at 843-708-2228 for tickets.">
   <meta name="theme-color" content="#1d2923">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Christmas in Charleston Candlelight Tour of Private Homes">
-  <meta property="og:description" content="Two December evenings inside downtown Charleston's private homes, shown by the people who live in them. Call 843-708-2228 for tickets.">
+  <meta property="og:description" content="Two December evenings inside downtown Charleston's private homes. Proceeds benefit the restoration of New Tabernacle Fourth Baptist Church. Call Laura Wichmann Hipp at 843-708-2228 for tickets.">
   <meta property="og:locale" content="en_US">
-  <!-- PLACEHOLDER [OG IMAGE]: once the site has its domain, make this a full URL
-       (https://YOUR-DOMAIN/images/og-image.png). Social sites ignore relative paths. -->
-  <meta property="og:image" content="images/og-image.png">
+  <meta property="og:url" content="https://hankmengedoht-hue.github.io/christmastoursite/">
+  <meta property="og:image" content="https://hankmengedoht-hue.github.io/christmastoursite/images/og-image.png">
+  <meta property="og:image:alt" content="Christmas in Charleston Candlelight Tour of Private Homes, December 18 and 19, 2026">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Christmas in Charleston Candlelight Tour of Private Homes">
+  <meta name="twitter:description" content="Two December evenings inside downtown Charleston's private homes. Proceeds benefit the restoration of New Tabernacle Fourth Baptist Church.">
+  <link rel="canonical" href="https://hankmengedoht-hue.github.io/christmastoursite/">
 
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 
@@ -40,6 +43,7 @@
     "startDate": "2026-12-18T16:00:00-05:00",
     "endDate": "2026-12-19T20:30:00-05:00",
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "organizer": { "@type": "Person", "name": "Laura Wichmann Hipp", "telephone": "+1-843-708-2228" },
     "location": {
       "@type": "Place",
       "name": "Downtown Charleston",
@@ -58,6 +62,32 @@
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
+  <!-- Shared drawings (the sash window used in the hero and in empty home slots) -->
+  <svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
+    <defs>
+      <pattern id="louvre" width="10" height="11" patternUnits="userSpaceOnUse">
+        <line x1="0" y1="5.500" x2="10" y2="5.500"/>
+      </pattern>
+      <radialGradient id="glow">
+        <stop offset="0" stop-color="#f1c06a" stop-opacity=".62"/>
+        <stop offset=".35" stop-color="#e9a94e" stop-opacity=".26"/>
+        <stop offset="1" stop-color="#e9a94e" stop-opacity="0"/>
+      </radialGradient>
+      <clipPath id="glass"><rect x="52" y="40" width="136" height="500"/></clipPath>
+
+      <!-- One six-over-six sash window with louvred shutters -->
+      <symbol id="window" viewBox="0 0 240 600" overflow="visible">
+        <rect class="w-shutter" x="2" y="40" width="42" height="500"/>
+        <rect class="w-shutter" x="196" y="40" width="42" height="500"/>
+        <rect x="40" y="12" width="160" height="18"/>
+        <rect x="52" y="40" width="136" height="500"/>
+        <rect x="38" y="548" width="164" height="13"/>
+        <line x1="52" y1="290" x2="188" y2="290" class="w-rail"/>
+        <path d="M97.300 40V540M142.700 40V540M52 165H188M52 415H188"/>
+      </symbol>
+    </defs>
+  </svg>
+
   <!-- ============================================================
        NAVIGATION
        ============================================================ -->
@@ -70,8 +100,11 @@
 
       <nav class="nav__links" aria-label="Primary">
         <a href="#about">About</a>
-        <a href="#experience">Experience</a>
+        <a href="#homes">Homes</a>
+        <a href="#church">The Church</a>
+        <a href="#money">Proceeds</a>
         <a href="#details">Details</a>
+        <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
       </nav>
 
@@ -86,8 +119,11 @@
     <div class="menu" id="mobile-menu" data-menu hidden>
       <nav class="menu__links" aria-label="Mobile">
         <a href="#about">About</a>
-        <a href="#experience">Experience</a>
+        <a href="#homes">Homes</a>
+        <a href="#church">The Church</a>
+        <a href="#money">Proceeds</a>
         <a href="#details">Details</a>
+        <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
       </nav>
       <p class="menu__call">
@@ -110,28 +146,6 @@
 
       <div class="hero__art" aria-hidden="true">
         <svg viewBox="0 0 860 602" preserveAspectRatio="xMidYMax meet">
-          <defs>
-            <pattern id="louvre" width="10" height="11" patternUnits="userSpaceOnUse">
-              <line x1="0" y1="5.500" x2="10" y2="5.500"/>
-            </pattern>
-            <radialGradient id="glow">
-              <stop offset="0" stop-color="#f1c06a" stop-opacity=".62"/>
-              <stop offset=".35" stop-color="#e9a94e" stop-opacity=".26"/>
-              <stop offset="1" stop-color="#e9a94e" stop-opacity="0"/>
-            </radialGradient>
-            <clipPath id="glass"><rect x="52" y="40" width="136" height="500"/></clipPath>
-
-            <!-- One six-over-six sash window with louvred shutters -->
-            <symbol id="window" viewBox="0 0 240 600" overflow="visible">
-              <rect class="w-shutter" x="2" y="40" width="42" height="500"/>
-              <rect class="w-shutter" x="196" y="40" width="42" height="500"/>
-              <rect x="40" y="12" width="160" height="18"/>
-              <rect x="52" y="40" width="136" height="500"/>
-              <rect x="38" y="548" width="164" height="13"/>
-              <line x1="52" y1="290" x2="188" y2="290" class="w-rail"/>
-              <path d="M97.300 40V540M142.700 40V540M52 165H188M52 415H188"/>
-            </symbol>
-          </defs>
 
           <g class="win" style="--i:0" transform="translate(30 20)">
             <circle class="win__glow" cx="120" cy="462" r="230" fill="url(#glow)" clip-path="url(#glass)"/>
@@ -178,6 +192,15 @@
         <div><dt>Where</dt><dd>Downtown Charleston</dd></div>
         <div><dt>Tickets</dt><dd><a href="tel:843-708-2228">843-708-2228</a></dd></div>
       </dl>
+
+      <p class="hero__trust">
+        <svg viewBox="0 0 12 20" aria-hidden="true"><path d="M6 0c4 5.500 5 9.500 5 12.500A5 5 0 0 1 1 12.500C1 9.500 2 5.500 6 0Z"/></svg>
+        <span>
+          Proceeds benefit the restoration of New Tabernacle Fourth Baptist Church.
+          <span class="ph">[PLACEHOLDER: credential, e.g. nonprofit status or sponsoring organization]</span>
+          <a href="#money">See where the money goes</a>
+        </span>
+      </p>
     </section>
 
     <!-- ============================================================
@@ -273,6 +296,104 @@
     </section>
 
     <!-- ============================================================
+         HOMES ON THE TOUR
+         Six slots are set up. Copy or delete an <li class="home"> block to
+         match the real number of homes. Photographs go in /images/homes/.
+         ============================================================ -->
+    <section class="homes section" id="homes">
+      <div class="wrap">
+        <div class="split-head" data-reveal>
+          <h2>Homes on the tour</h2>
+          <p>
+            Each home is a private residence, opened for the evening and shown by its owner.
+            <span class="ph">[PLACEHOLDER: number of homes on each evening]</span>
+          </p>
+        </div>
+
+        <ol class="homes__grid">
+          <li class="home" data-reveal>
+            <figure class="plate plate--home">
+              <!-- Drop images/homes/home-1.jpg into the folder and it appears here (portrait, about 1200×1500). Update the alt text. -->
+              <img src="images/homes/home-1.jpg" alt="Home 1 on the tour: replace with the home's name and a short description of the photograph" width="1200" height="1500" loading="lazy" onerror="this.remove()">
+              <figcaption class="home__empty">
+                <svg viewBox="0 0 240 600" aria-hidden="true"><use href="#window"/></svg>
+                <span>Home 1</span>
+              </figcaption>
+            </figure>
+            <h3><span class="ph">[PLACEHOLDER: home 1 name or street]</span></h3>
+            <p><span class="ph">[PLACEHOLDER: home 1 short description]</span></p>
+            <dl class="home__evening"><dt>Evening</dt><dd><span class="ph">[PLACEHOLDER: Friday, Saturday or both]</span></dd></dl>
+          </li>
+          <li class="home" data-reveal>
+            <figure class="plate plate--home">
+              <!-- Drop images/homes/home-2.jpg into the folder and it appears here (portrait, about 1200×1500). Update the alt text. -->
+              <img src="images/homes/home-2.jpg" alt="Home 2 on the tour: replace with the home's name and a short description of the photograph" width="1200" height="1500" loading="lazy" onerror="this.remove()">
+              <figcaption class="home__empty">
+                <svg viewBox="0 0 240 600" aria-hidden="true"><use href="#window"/></svg>
+                <span>Home 2</span>
+              </figcaption>
+            </figure>
+            <h3><span class="ph">[PLACEHOLDER: home 2 name or street]</span></h3>
+            <p><span class="ph">[PLACEHOLDER: home 2 short description]</span></p>
+            <dl class="home__evening"><dt>Evening</dt><dd><span class="ph">[PLACEHOLDER: Friday, Saturday or both]</span></dd></dl>
+          </li>
+          <li class="home" data-reveal>
+            <figure class="plate plate--home">
+              <!-- Drop images/homes/home-3.jpg into the folder and it appears here (portrait, about 1200×1500). Update the alt text. -->
+              <img src="images/homes/home-3.jpg" alt="Home 3 on the tour: replace with the home's name and a short description of the photograph" width="1200" height="1500" loading="lazy" onerror="this.remove()">
+              <figcaption class="home__empty">
+                <svg viewBox="0 0 240 600" aria-hidden="true"><use href="#window"/></svg>
+                <span>Home 3</span>
+              </figcaption>
+            </figure>
+            <h3><span class="ph">[PLACEHOLDER: home 3 name or street]</span></h3>
+            <p><span class="ph">[PLACEHOLDER: home 3 short description]</span></p>
+            <dl class="home__evening"><dt>Evening</dt><dd><span class="ph">[PLACEHOLDER: Friday, Saturday or both]</span></dd></dl>
+          </li>
+          <li class="home" data-reveal>
+            <figure class="plate plate--home">
+              <!-- Drop images/homes/home-4.jpg into the folder and it appears here (portrait, about 1200×1500). Update the alt text. -->
+              <img src="images/homes/home-4.jpg" alt="Home 4 on the tour: replace with the home's name and a short description of the photograph" width="1200" height="1500" loading="lazy" onerror="this.remove()">
+              <figcaption class="home__empty">
+                <svg viewBox="0 0 240 600" aria-hidden="true"><use href="#window"/></svg>
+                <span>Home 4</span>
+              </figcaption>
+            </figure>
+            <h3><span class="ph">[PLACEHOLDER: home 4 name or street]</span></h3>
+            <p><span class="ph">[PLACEHOLDER: home 4 short description]</span></p>
+            <dl class="home__evening"><dt>Evening</dt><dd><span class="ph">[PLACEHOLDER: Friday, Saturday or both]</span></dd></dl>
+          </li>
+          <li class="home" data-reveal>
+            <figure class="plate plate--home">
+              <!-- Drop images/homes/home-5.jpg into the folder and it appears here (portrait, about 1200×1500). Update the alt text. -->
+              <img src="images/homes/home-5.jpg" alt="Home 5 on the tour: replace with the home's name and a short description of the photograph" width="1200" height="1500" loading="lazy" onerror="this.remove()">
+              <figcaption class="home__empty">
+                <svg viewBox="0 0 240 600" aria-hidden="true"><use href="#window"/></svg>
+                <span>Home 5</span>
+              </figcaption>
+            </figure>
+            <h3><span class="ph">[PLACEHOLDER: home 5 name or street]</span></h3>
+            <p><span class="ph">[PLACEHOLDER: home 5 short description]</span></p>
+            <dl class="home__evening"><dt>Evening</dt><dd><span class="ph">[PLACEHOLDER: Friday, Saturday or both]</span></dd></dl>
+          </li>
+          <li class="home" data-reveal>
+            <figure class="plate plate--home">
+              <!-- Drop images/homes/home-6.jpg into the folder and it appears here (portrait, about 1200×1500). Update the alt text. -->
+              <img src="images/homes/home-6.jpg" alt="Home 6 on the tour: replace with the home's name and a short description of the photograph" width="1200" height="1500" loading="lazy" onerror="this.remove()">
+              <figcaption class="home__empty">
+                <svg viewBox="0 0 240 600" aria-hidden="true"><use href="#window"/></svg>
+                <span>Home 6</span>
+              </figcaption>
+            </figure>
+            <h3><span class="ph">[PLACEHOLDER: home 6 name or street]</span></h3>
+            <p><span class="ph">[PLACEHOLDER: home 6 short description]</span></p>
+            <dl class="home__evening"><dt>Evening</dt><dd><span class="ph">[PLACEHOLDER: Friday, Saturday or both]</span></dd></dl>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================================================
          4. FULL-WIDTH IMAGE BREAK
          ============================================================ -->
     <section class="break" aria-label="See Charleston by candlelight">
@@ -284,13 +405,139 @@
     </section>
 
     <!-- ============================================================
+         THE CHURCH
+         ============================================================ -->
+    <section class="church section" id="church">
+      <div class="wrap">
+        <div class="church__row">
+          <div class="church__text" data-reveal>
+            <h2>Why restore New Tabernacle Fourth Baptist Church</h2>
+            <p class="church__lede">
+              Every ticket to the tour goes toward one building. This is the church the
+              evening is for, and why its restoration matters.
+            </p>
+
+            <h3>Its history</h3>
+            <p>
+              New Tabernacle Fourth Baptist Church is one of Charleston&rsquo;s historic
+              houses of worship. <span class="ph">[PLACEHOLDER: founding date, architect or builder, architectural style, notable features]</span>
+            </p>
+
+            <h3>Its place in the community</h3>
+            <p>
+              A church is more than its walls. <span class="ph">[PLACEHOLDER: the congregation today, its role in the neighborhood, programs and services it offers]</span>
+            </p>
+          </div>
+
+          <figure class="plate plate--tall" data-reveal="plate">
+            <!-- Drop images/church-exterior.jpg into /images and it appears here (portrait, about 1200×1500). -->
+            <img src="images/church-exterior.jpg" alt="The exterior of New Tabernacle Fourth Baptist Church in Charleston" width="1200" height="1500" loading="lazy" onerror="this.remove()">
+            <figcaption class="plate__note">Photograph to come: the church exterior</figcaption>
+          </figure>
+        </div>
+
+        <div class="church__row church__row--flip">
+          <div class="church__text" data-reveal>
+            <h3>What needs restoring</h3>
+            <p>
+              Old buildings ask a great deal of the people who care for them, and this one
+              needs help now. <span class="ph">[PLACEHOLDER: current condition of the building]</span>
+            </p>
+            <p>
+              The work the tour will help pay for: <span class="ph">[PLACEHOLDER: specific repairs, e.g. roof, windows, masonry]</span>
+            </p>
+
+            <h3>For the nation&rsquo;s 250th</h3>
+            <p>
+              In 2026 the United States marks its 250th anniversary, and Charleston&rsquo;s
+              historic buildings are part of that story. The tour was organized to benefit
+              the restoration of this architectural gem for the nation&rsquo;s 250th, so that
+              the church can be cared for in the anniversary year and handed on in better
+              condition than it was found.
+            </p>
+            <p><span class="ph">[PLACEHOLDER: how the restoration ties to the 250th, e.g. planned milestones, events or timeline]</span></p>
+          </div>
+
+          <figure class="plate plate--wide" data-reveal="plate">
+            <!-- Drop images/church-repairs.jpg into /images and it appears here (landscape, about 1600×1200). -->
+            <img src="images/church-repairs.jpg" alt="Damage at New Tabernacle Fourth Baptist Church that the restoration will repair" width="1600" height="1200" loading="lazy" onerror="this.remove()">
+            <figcaption class="plate__note">Photograph to come: what needs repair</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         WHERE THE MONEY GOES
+         ============================================================ -->
+    <section class="money" id="money">
+      <div class="wrap">
+        <div class="split-head" data-reveal>
+          <h2>Where the money goes</h2>
+          <p>
+            It is fair to ask what happens to the price of a ticket. Here is who runs the
+            tour, who holds the funds, and how they are spent.
+          </p>
+        </div>
+
+        <dl class="facts facts--green" data-reveal>
+          <div class="facts__row">
+            <dt>Organized by</dt>
+            <dd>Laura Wichmann Hipp <span class="ph">[PLACEHOLDER: committee members and partner organizations]</span></dd>
+          </div>
+          <div class="facts__row">
+            <dt>Publicly listed</dt>
+            <dd>The tour appears on the <a href="https://www.charlestoncvb.com/events/christmas-in-charleston-candlelight-tour-of-private-homes~28702/" rel="noopener">Explore Charleston events calendar</a></dd>
+          </div>
+          <div class="facts__row">
+            <dt>Funds held by</dt>
+            <dd><span class="ph">[PLACEHOLDER: who receives and manages the funds, e.g. named restoration fund, 501(c)(3) status and EIN, bank or fiscal sponsor]</span></dd>
+          </div>
+          <div class="facts__row">
+            <dt>How proceeds are used</dt>
+            <dd>
+              <ul class="money__lines">
+                <li><span class="ph">[PLACEHOLDER: proceeds line item 1 and its share]</span></li>
+                <li><span class="ph">[PLACEHOLDER: proceeds line item 2 and its share]</span></li>
+                <li><span class="ph">[PLACEHOLDER: proceeds line item 3 and its share]</span></li>
+              </ul>
+            </dd>
+          </div>
+          <div class="facts__row">
+            <dt>Accountability</dt>
+            <dd><span class="ph">[PLACEHOLDER: who oversees spending, and whether receipts or reports are published]</span></dd>
+          </div>
+          <div class="facts__row">
+            <dt>Progress reports</dt>
+            <dd>After the tour, photographs and updates on the restoration will be shared as the work is done. <span class="ph">[PLACEHOLDER: where updates will be posted]</span></dd>
+          </div>
+          <div class="facts__row">
+            <dt>Tax deductibility</dt>
+            <dd><span class="ph">[PLACEHOLDER: whether ticket purchases are tax-deductible]</span></dd>
+          </div>
+        </dl>
+
+        <figure class="endorse" data-reveal>
+          <blockquote>
+            <p><span class="ph">[PLACEHOLDER: quote or endorsement from the pastor or a community figure]</span></p>
+          </blockquote>
+          <figcaption><span class="ph">[PLACEHOLDER: name and title of the person quoted]</span></figcaption>
+        </figure>
+
+        <p class="money__foot" data-reveal>
+          Want to ask something directly? Call Laura at <a href="tel:843-708-2228">843-708-2228</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
          5. TOUR DETAILS
          Confirmed facts are set in solid type. Anything not yet supplied
-         is marked "To be announced" with a PLACEHOLDER comment beside it.
+         is a visible [PLACEHOLDER: ...] inside a span with class "ph".
          ============================================================ -->
     <section class="details section" id="details">
       <div class="wrap">
-        <div class="details__head" data-reveal>
+        <div class="split-head" data-reveal>
           <h2>Plan your evening</h2>
           <p>The two evenings work differently. Here is how each one runs.</p>
         </div>
@@ -330,7 +577,7 @@
           </div>
           <div class="facts__row">
             <dt>Tickets</dt>
-            <dd>By phone from Laura Wichman Hip, <a href="tel:843-708-2228">843-708-2228</a></dd>
+            <dd>By phone from Laura Wichmann Hipp, <a href="tel:843-708-2228">843-708-2228</a></dd>
           </div>
           <div class="facts__row">
             <dt>Benefiting</dt>
@@ -338,21 +585,106 @@
           </div>
           <div class="facts__row facts__row--tba">
             <dt>Ticket price</dt>
-            <dd><!-- PLACEHOLDER [PRICING] -->To be announced</dd>
+            <dd><span class="ph">[PLACEHOLDER: ticket price]</span></dd>
           </div>
           <div class="facts__row facts__row--tba">
             <dt>Starting point</dt>
-            <dd><!-- PLACEHOLDER [MEETING LOCATION] -->To be announced</dd>
+            <dd><span class="ph">[PLACEHOLDER: starting point / check-in location]</span></dd>
           </div>
           <div class="facts__row facts__row--tba">
             <dt>What&rsquo;s included</dt>
-            <dd><!-- PLACEHOLDER [TOUR DETAILS] -->To be announced</dd>
+            <dd><span class="ph">[PLACEHOLDER: what a ticket includes]</span></dd>
           </div>
         </dl>
 
         <p class="details__foot" data-reveal>
           For anything not listed here, call Laura at <a href="tel:843-708-2228">843-708-2228</a>.
         </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FAQ
+         Panels are open by default; script.js collapses them and wires
+         the buttons, so every answer stays readable without JavaScript.
+         ============================================================ -->
+    <section class="faq section" id="faq">
+      <div class="wrap faq__grid">
+        <div class="faq__head" data-reveal>
+          <h2>Questions people ask</h2>
+          <p>If yours is not here, call Laura at <a href="tel:843-708-2228">843-708-2228</a>.</p>
+        </div>
+
+        <div class="faq__list" data-reveal>
+          <div class="faq__item">
+            <h3><button class="faq__q" type="button" aria-expanded="true" aria-controls="faq-1" data-faq>Is this tour legitimate? Who is behind it?<span class="faq__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq__a" id="faq-1">
+              <p>Yes. The tour is organized by Laura Wichmann Hipp <span class="ph">[PLACEHOLDER: committee members and partner organizations]</span>, and it appears on the <a href="https://www.charlestoncvb.com/events/christmas-in-charleston-candlelight-tour-of-private-homes~28702/" rel="noopener">Explore Charleston events calendar</a>.</p>
+              <p>You can speak to Laura directly at <a href="tel:843-708-2228">843-708-2228</a> before you buy anything.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <h3><button class="faq__q" type="button" aria-expanded="true" aria-controls="faq-2" data-faq>Where does my money go?<span class="faq__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq__a" id="faq-2">
+              <p>Proceeds benefit the restoration of New Tabernacle Fourth Baptist Church. <span class="ph">[PLACEHOLDER: who receives and manages the funds]</span></p>
+              <p>The full account is under <a href="#money">Where the money goes</a>.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <h3><button class="faq__q" type="button" aria-expanded="true" aria-controls="faq-3" data-faq>What will I see on the tour? How many homes?<span class="faq__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq__a" id="faq-3">
+              <p>Private homes in downtown Charleston, shown by the homeowners themselves. <span class="ph">[PLACEHOLDER: number of homes on each evening]</span></p>
+              <p>See <a href="#homes">Homes on the tour</a>.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <h3><button class="faq__q" type="button" aria-expanded="true" aria-controls="faq-4" data-faq>What is the difference between Friday and Saturday?<span class="faq__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq__a" id="faq-4">
+              <p>On Friday, December 18, you drive to the homes on your own; it is not a walking tour. On Saturday, December 19, the homes are within walking distance of each other. Both evenings run 4:00&ndash;8:30 PM.</p>
+              <p><span class="ph">[PLACEHOLDER: whether the same homes are open both evenings, and whether one ticket covers both]</span></p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <h3><button class="faq__q" type="button" aria-expanded="true" aria-controls="faq-5" data-faq>How do I buy tickets? How much are they? Can I pay by card or check?<span class="faq__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq__a" id="faq-5">
+              <p>Tickets are sold by phone. Call Laura Wichmann Hipp at <a href="tel:843-708-2228">843-708-2228</a>.</p>
+              <p>Price: <span class="ph">[PLACEHOLDER: ticket price]</span>. Payment: <span class="ph">[PLACEHOLDER: payment methods accepted, e.g. card, check, cash]</span>.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <h3><button class="faq__q" type="button" aria-expanded="true" aria-controls="faq-6" data-faq>Where do I start or check in?<span class="faq__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq__a" id="faq-6">
+              <p><span class="ph">[PLACEHOLDER: starting point / check-in location for each evening]</span></p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <h3><button class="faq__q" type="button" aria-expanded="true" aria-controls="faq-7" data-faq>How long does the tour take? Can I arrive late?<span class="faq__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq__a" id="faq-7">
+              <p>The homes are open from 4:00 to 8:30 PM on both evenings.</p>
+              <p><span class="ph">[PLACEHOLDER: typical time needed, latest recommended arrival, and whether homes can be visited in any order]</span></p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <h3><button class="faq__q" type="button" aria-expanded="true" aria-controls="faq-8" data-faq>Is it accessible? Are children allowed? Can I take photos inside?<span class="faq__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq__a" id="faq-8">
+              <p>Accessibility: <span class="ph">[PLACEHOLDER: stairs, walking distances, parking on Friday]</span></p>
+              <p>Children: <span class="ph">[PLACEHOLDER: whether children are allowed and any age guidance]</span></p>
+              <p>Photography: <span class="ph">[PLACEHOLDER: whether photographs may be taken inside the homes]</span></p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <h3><button class="faq__q" type="button" aria-expanded="true" aria-controls="faq-9" data-faq>What happens in bad weather?<span class="faq__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq__a" id="faq-9">
+              <p><span class="ph">[PLACEHOLDER: rain or bad-weather policy, including refunds or exchanges]</span></p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <h3><button class="faq__q" type="button" aria-expanded="true" aria-controls="faq-10" data-faq>Is my ticket tax-deductible?<span class="faq__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq__a" id="faq-10">
+              <p><span class="ph">[PLACEHOLDER: whether ticket purchases are tax-deductible]</span></p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -364,13 +696,16 @@
         <h2>Ready to experience Charleston?</h2>
         <p class="contact__lede">
           Have questions, or want tickets? Get in touch with
-          <strong>Laura&nbsp;Wichman&nbsp;Hip</strong>.
+          <strong>Laura&nbsp;Wichmann&nbsp;Hipp</strong>.
         </p>
         <a class="contact__phone" href="tel:843-708-2228">843-708-2228</a>
         <a class="btn btn--flame btn--lg" href="tel:843-708-2228">
           <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4.200 1.800h3l1.500 4-2 1.400a11 11 0 0 0 6.100 6.100l1.400-2 4 1.500v3a1.800 1.800 0 0 1-2 1.800A15.800 15.800 0 0 1 2.400 3.800a1.800 1.800 0 0 1 1.800-2Z"/></svg>
           Call Laura
         </a>
+        <p class="contact__alt">
+          Tickets are sold by phone. Prefer to write? Email <span class="ph">[PLACEHOLDER: email address]</span>
+        </p>
       </div>
     </section>
   </main>
@@ -383,7 +718,7 @@
       <p class="footer__name">Christmas in Charleston<br>Candlelight Tour of Private Homes</p>
       <address class="footer__contact">
         Charleston, SC<br>
-        Contact Laura Wichman Hip<br>
+        Contact Laura Wichmann Hipp<br>
         <a href="tel:843-708-2228">843-708-2228</a>
       </address>
       <p class="footer__legal">&copy; <span data-year>2026</span> Christmas in Charleston Candlelight Tour of Private Homes</p>

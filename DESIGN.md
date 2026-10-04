@@ -81,7 +81,7 @@ components:
     padding: "0.85rem 1.75rem"
     height: "3.25rem"
   button-flame-hover:
-    backgroundColor: "#f6c979"
+    backgroundColor: "{colors.flame-500}"
     textColor: "{colors.green-950}"
   button-flame-lg:
     backgroundColor: "{colors.flame-400}"
@@ -211,7 +211,7 @@ Square. One radius (2px) softens buttons, the outlined phone chip and focus ring
 ### Buttons
 - **Shape:** near-square (2px), minimum height 3.25rem, uppercase action type.
 - **Primary (flame):** flame-400 fill, green-950 text, padding 0.85rem by 1.75rem. A large size (3.75rem tall, 2.5rem side padding) is used for the closing call action and may carry a small filled icon.
-- **Hover / Focus:** fill lightens to #f6c979 and the button lifts 2px (200ms); active settles back. Focus is a 2px flame-500 outline offset 3px, the same on every interactive element.
+- **Hover / Focus:** fill deepens to flame-500 and the button lifts 2px (200ms); active settles back. Focus is a 2px flame-500 outline offset 3px, the same on every interactive element.
 - **Arrow link:** the secondary action. Uppercase action type with a permanent 1px underline and a drawn arrow that slides 5px on hover. Inherits the field's text colour.
 
 ### Cards / Containers
@@ -223,6 +223,18 @@ A definition list, not a table. Each row is a hairline-topped pair: uppercase la
 
 ### Navigation
 Fixed, 4.5rem tall, transparent over the green hero and solid ivory with the nav-edge shadow after 40px of scroll. Brand is the flame mark plus a Caslon line with its second half in italic soft colour. Links are 0.875rem at weight 500 with a 1px underline that draws in from the left on hover and stays for the current section. The phone number sits at the right as an outlined 2px chip with tabular numerals that fills flame on hover. Below 60rem, links and chip give way to a three-bar toggle opening a full-height green-900 panel: display-size links on hairline rules, phone number in flame at the foot.
+
+### Pending Mark
+Information the client has not yet supplied is shown in place as `[PLACEHOLDER: ...]` in a `.ph` span: italic, on a 10% tint of the surrounding text colour, 2px radius. It works on every field and is removed by replacing the span with real text.
+
+### Home Slot
+One item per home in a three-up grid (two-up below 64rem): a 4:5 plate, a title, one line of body text, and an "Evening" label-and-value pair on a hairline. Empty, the plate shows the drawn sash window in ink hairline with "Home N" in italic Caslon; a photograph dropped into `images/homes/` covers it. Not a card: no border, no shadow.
+
+### Questions
+An accordion on ivory: hairline-ruled rows, each a full-width button in Caslon at lede size with a drawn plus that closes to a minus (300ms). Answers are body text in ink-soft, open in the markup and collapsed by script, so they read without JavaScript.
+
+### Facts on Green
+The fact-row pattern on green-900 for "Where the money goes": labels in on-green-soft, values in on-green, rules at 20% on-green, links in flame-400. An endorsement sits beneath as italic Caslon at title size with a soft attribution line.
 
 ### Call Bar
 Phones only. A full-width flame-400 bar fixed to the bottom with green-950 text, sliding up (450ms) once the hero has passed and withdrawing when the contact section arrives, so the number is never shown twice.
