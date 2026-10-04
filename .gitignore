@@ -1,0 +1,4 @@
+# Local design-tool working files (not part of the site)
+.impeccable/
+.DS_Store
+Thumbs.db
